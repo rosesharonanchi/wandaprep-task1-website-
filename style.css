@@ -254,5 +254,7 @@ p{
 /* End of price section */
 
 /* Start of intergration section */
-
+.intergrate{
+    background-image: url(assets/dark-background.jpg);
+}
 /* End of intergration section */
