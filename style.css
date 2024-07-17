@@ -1,6 +1,183 @@
+:root{
+    --black-: black;
+    --primary-color: rgba(45, 37, 89, 0.89);
+    --white: white;
+    --grey: rgb(219, 213, 213);
+    --thick-grey: grey;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+.nav-wrap ul{
+  list-style: none;  
+  display: flex; 
+  /* justify-content: space-between; */
+
+}
+.nav-wrap ul a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+
+}
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.my-sweet-navbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-bottom: 4rem; 
+    
+}
+.white-button{
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: .5rem;
+    width: 4rem;
+    cursor: pointer;
+    
+}
+.blue-button{
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    padding: .6rem;
+    width: 8rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.navbar-wrap{
+    padding: 2rem 2rem;
+    background-color: var(--white);
+    padding-bottom: 4rem;
+
+}
+/* End of navbar */
+
+/* start of hero section */
+.hero-section{
+    display: flex;
+   width: 100%; 
+   height: 100px;
+   gap: 5rem;
+   justify-content: space-between;
+   
+  
+   
+}
+.hero-right img{
+max-width: 100%;
+height: auto;
+border-top-left-radius: 5rem;
+border-bottom-left-radius: 5rem;
+
+}
+.hero-left, .hero-right{
+    flex-basis: 48%;
+
+}
+.hero-left{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+}
+.hero-section h1{
+    font-size: 3rem;
+}
+.hero-section{
+    
+    height: auto;
+}
+.hero-left > h1, .hero-left p{
+    margin-bottom: 2rem;
+}
+.add{
+    width: 9rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+/* End of hero section */
+
+/* Cards section */
+.cards-section{
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    justify-content: center;
+    height: auto;
+
+}
+.cards-section h1{
+    font-size: 2.5rem;
+}
+.cards-section p{
+    color: var(--thick-grey);
+}
+.card{
+    background-color: var(--white);
+    border-radius: 1rem;
+    height: 18rem;
+    padding: 2rem;
+    width: 25%;
+}
+.cards{
+    display: flex;
+    gap: 3rem;
+    
+}
+.cards-section > *{
+    margin-bottom: 2rem;
+}
+.card > i{
+    margin-bottom: 6rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    background-color: var(--grey);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.card > h2{
+    margin-bottom: 1rem;
+}
+/* End of cards section */
+
+/* grid secion */
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 0;
+    width: 100%;
+    /* grid-gap: 3rem; */
+    background-color: yellow;
+}
+.grid-section img{
+    /* max-width: 100%; */
+    height: auto;
+
+}
+.grid-img{
+    background-color: var(--grey);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    
+}
+.grid-text{
     
 }
