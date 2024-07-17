@@ -280,6 +280,40 @@ p {
     display: inline-block;
 } */
 .footer-left {
-  width: 25%;
+  width: 30%;
+}
+.footer-right{
+  display: flex;
+  gap: 5rem;
+}
+.footer-left>*{
+  margin-bottom: 1rem;
+}
+.my-footer{
+  display: flex;
+  gap: 15rem;
+  padding: 3rem;
+}
+.footer-right a{
+  text-decoration: none;
+  color: var(--thick-grey);
+ 
+}
+.footer-right p, .footer-right h3{
+  margin-bottom: .7rem;
+}
+#custom{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+#custom img{
+  width: 25px;
+  height: 25px;
+  margin-left: 1rem;
+}
+#line{
+  width: 95%;
+  margin: auto;
 }
 /* End of footer */
