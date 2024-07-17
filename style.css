@@ -4,6 +4,7 @@
     --white: white;
     --grey: rgb(219, 213, 213);
     --thick-grey: grey;
+    --orange: rgb(255, 162, 0);
 }
 
 *{
@@ -45,6 +46,7 @@
     padding: .5rem;
     width: 4rem;
     cursor: pointer;
+    margin-right: 1rem;
     
 }
 .blue-button{
@@ -54,7 +56,6 @@
     border: none;
     padding: .6rem;
     width: 8rem;
-    margin-left: 1rem;
     cursor: pointer;
     font-size: 1rem;
 }
@@ -104,9 +105,12 @@ border-bottom-left-radius: 5rem;
     margin-bottom: 2rem;
 }
 .add{
-    width: 9rem;
+    width: 12rem;
     font-size: 1.1rem;
-    padding: 1rem;
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
 }
 /* End of hero section */
 
@@ -161,23 +165,94 @@ border-bottom-left-radius: 5rem;
     grid-template-columns: repeat(2,1fr);
     padding: 3rem 0;
     width: 100%;
-    /* grid-gap: 3rem; */
-    background-color: yellow;
+    grid-gap: 6rem 0;
+    
 }
 .grid-section img{
-    /* max-width: 100%; */
+    width: 60%;
+    border-radius: 1rem;
     height: auto;
 
 }
 .grid-img{
     background-color: var(--grey);
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 5rem 0;
+ 
     
 }
 .grid-text{
-    
+    margin: auto;
 }
+.grid-text>h1{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+
+}
+.grid-text > p{
+    color: var(--thick-grey);
+}
+ .grid1{
+border-top-left-radius: 1rem;
+border-bottom-left-radius: 1rem;
+}
+.grid2{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* End of grid section */
+
+/* Start of price section */
+.free-plan{
+    width: 22%;
+    height: auto;
+    border: solid 1px var(--thick-grey);
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+.flex-div .flex-wrap{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-basis: 1rem;
+    margin-bottom: .5rem;
+}
+.free-plan>*{
+    margin-bottom: .5rem;
+}
+.black-button{
+    width: 15rem;
+    margin: 1rem 0;
+    background-color: var(--black-);
+}
+.orange-button{
+    width: 15rem;
+    margin: 1rem 0;
+    background-color: var(--orange)
+}
+.blue{
+    width: 15rem;
+    margin: 1rem 0; 
+}
+p{
+    color: var(--thick-grey);
+}
+.price{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 3rem;
+}
+.price>h1{
+   width: 25%;
+   font-size: 2.5rem;
+}
+/* End of price section */
+
+/* Start of intergration section */
+
+/* End of intergration section */
