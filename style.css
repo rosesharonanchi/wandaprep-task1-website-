@@ -140,6 +140,9 @@ body {
 .hero-right {
   flex-basis: 48%;
 }
+ /* .hero-left{
+  width: 50%;
+ } */
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -265,17 +268,17 @@ body {
   margin-bottom: 0.5rem;
 }
 .black-button {
-  width: 15rem;
+  width: 95%;
   margin: 1rem 0;
   background-color: var(--black-);
 }
 .orange-button {
-  width: 15rem;
+  width: 95%;
   margin: 1rem 0;
   background-color: var(--orange);
 }
 .blue {
-  width: 15rem;
+  width: 95%;
   margin: 1rem 0;
 }
 p {
@@ -447,7 +450,7 @@ br {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
   }
-  
+
   .price {
     flex-direction: column;
     padding: 0 2rem;
@@ -473,45 +476,116 @@ br {
     margin-bottom: 4rem;
   }
   .intergrate {
-   padding: 3rem .2rem;
-  
+    padding: 3rem 0.2rem;
   }
-  .intergrate *{
-    padding-bottom: .5rem;
+  .intergrate * {
+    padding-bottom: 0.5rem;
     margin: auto;
   }
-  .intergrate p{
+  .intergrate p {
     display: none;
   }
-  .intergrate #h1{
+  .intergrate #h1 {
     width: 70%;
-   
   }
-  .my-footer{
+  .my-footer {
     flex-direction: column;
   }
-  .footer-right{
+  .footer-right {
     flex-direction: column;
   }
-.footer-left{
-  width: 100%;
- 
-}
-.my-footer, .footer-right{
-  gap: 2rem;
-}
-.footer-right h3{
-  font-size: 1.5rem;
+  .footer-left {
+    width: 100%;
+  }
+  .my-footer,
+  .footer-right {
+    gap: 2rem;
+  }
+  .footer-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .my-footer p {
+    font-size: 1.3rem;
+  }
+  .my-footer {
+    padding: 0rem 2rem;
+  }
+  #custom {
+    padding: 2rem 2rem;
+  }
 }
 
-.my-footer p{
-  font-size: 1.3rem;
-}
-.my-footer{
-  padding: 0rem 2rem;
-}
-#custom{
-  padding: 2rem 2rem;
-}
-}
+
 /* Medium screen design */
+@media (min-width: 769px) and (max-width: 992px) {
+  .my-sweet-navbar .nav-wrap li,
+  .my-sweet-navbar .nav-wrap button {
+    display: none;
+    flex: none;
+  }
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+  .hero-section {
+    width: 100%;
+    margin: auto;
+  }
+  .my-footer {
+    flex-direction: column;
+  }
+  .footer-right {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .my-footer,
+  .footer-right {
+    gap: 2rem;
+  }
+  .footer-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .my-footer p {
+    font-size: 1.3rem;
+  }
+  .my-footer {
+    padding: 0rem 2rem;
+  }
+  #custom {
+    padding: 2rem 2rem;
+  }
+  .input-wrap{
+    width: 70%;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .card{
+    width: 100%;
+  }
+  .price{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+ 
+  .price >*{
+    width: 100%;
+
+    .price h1{
+      margin: auto;
+    }
+  }
+}
+/* Large screens */
+@media(min-width:993px){
+  .nav-wrap .menu {
+    display: none;
+  }
+  
+}
